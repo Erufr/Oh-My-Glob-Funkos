@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #B721FF, #2AF598, #FA709A, #2AF598, #B721FF);
+    color: #1a1919;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabecera */
+.cabecera {
+    width: 100%;
+    height: 200px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    background-color: rgba(255, 255, 255, 0.212); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px 20px;
+}
+.cabecera-logo {
+    width: 100%;
+    height: 180px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* Menú */
+.menu {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-left: 50px;
+}
+
+.menu a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: rgba(235, 20, 145, 0.5);
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.busqueda {
+    width: fit-content;
+    margin-left: auto; 
+    display: flex;
+    flex-direction: initial;
+    background-color: #ffffff52;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.busqueda input {
+    background-color: #ffffff98;
+    border-radius: 25px;
+    outline: none;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.busqueda button {
+    background: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fa709a;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.busqueda button:hover {
+    color: #ff4b6b;
+}
+
+/* Sección de Productos */
+main {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 40px;
+    padding-top: 100px;
+}
+
+.mis-productos {
+    flex: 1;
+    background-color: rgba(235, 20, 145, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 80px;
+}
+
+.products-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.img-card {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-container--value button {
+    padding: 8px 12px;
+    background-color: #FA709A;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-container--value button:hover {
+    background-color: #FF4B6B;
+}
+
+/* Formulario */
+aside {
+    height: fit-content;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+button[type="submit"] {
+    background-color: #FA709A;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: #B721FF;
+}
+
+button[type="reset"] {
+    background-color: #2AF598;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #B721FF;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .cabecera {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        background-color:  rgba(255, 255, 255, 0.212); 
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 10px;
+    }
+
+    .mis-productos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column; 
+        width: 80%;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        overflow-x: hidden;
+    }
+    
+    .productos-lista {
+        grid-template-columns: 1fr; 
+    }
+    
+    aside {
+        height: fit-content;
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecera {
+        flex-direction: column;  
+        height: auto;
+        width: auto;
+        gap: 10px;
+    }
+
+    .cabecera-logo {
+        width: 100vh; 
+        height: auto;
+    }
+
+    .menu ul {
+        flex-direction:row;
+        
+        gap: 5px;
+        margin-left: 1rem;
+    }
+
+    .menu a {
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Busqueda */
+    .busqueda {
+        display: none;
+        width: 90%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .busqueda input,
+    .busqueda button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    body {
+        overflow-x: hidden; 
+    }
+
+    main {
+        width: 80%;
+        gap: 15px;
+    }
+
+    .mis-productos {
+        padding-top: 20px;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr; 
+    }
+
+    aside {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 1rem;
+
+    }
+
+}

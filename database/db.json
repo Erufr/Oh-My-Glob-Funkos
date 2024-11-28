@@ -1,0 +1,47 @@
+{
+    "products": [
+        {
+            "name": "BMO Funko",
+            "price": "100",
+            "image": "https://m.media-amazon.com/images/I/71ve0wL5TWL._AC_SL1500_.jpg",
+            "id": 1
+        },
+        {
+            "name": "Grmpy Funko",
+            "price": "100",
+            "image": "https://http2.mlstatic.com/D_NQ_NP_941028-MLC49276589164_032022-O.webp",
+            "id": 2
+        },
+        {
+            "name": "Jake Funko",
+            "price": "100",
+            "image": "https://http2.mlstatic.com/D_NQ_NP_746696-MLC49276729102_032022-O.webp",
+            "id": 3
+        },
+        {
+            "name": "Marceline Funko",
+            "price": "100",
+            "image": "https://m.media-amazon.com/images/I/71sGn9ZCdML.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+            "id": 4
+        },
+        {
+            "name": "Gunther Funko",
+            "price": "100",
+            "image": "https://m.media-amazon.com/images/I/41efrENYXtL._AC_.jpg",
+            "id": 5
+        },
+        {
+            "name": "Flame Princess Funko",
+            "price": "100",
+            "image": "https://m.media-amazon.com/images/I/719h7PcscLL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+            "id": 6
+        },
+        {
+            "name": "Ice King Funko",
+            "price": "100",
+            "image": "https://i.ebayimg.com/images/g/tQ4AAOSwW6RkrXMR/s-l1200.jpg",
+            "id": 7
+        }
+
+    ]
+}

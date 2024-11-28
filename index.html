@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es-419">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/jakefinn.png" type="image/png">
+    <title>Funko's Adventure Time</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="cabecera">
+        <img class="cabecera-logo" src="./Assets/banner.png" alt="Personanjes de Adveture Time">
+        <nav class="menu" aria-label="Menú de navegación principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#cargar-productos">Cargar Productos</a></li>
+            </ul>
+            <form class="busqueda" role="search">
+                <input type="text"  id="search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="submit"id="search-button" >🔍</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main id="inicio">
+        <!-- Sección de Productos -->
+        <section class="mis-productos" aria-labelledby="titulo-productos" id="productos">
+            <h2 id="titulo-productos">Mis Productos:</h2>
+            <div data-product class="products-container" id="products-container">
+                
+                <!-- Card de Producto -->
+                <!--<div class="card">
+                    <img class="img-card" src="https://m.media-amazon.com/images/I/71ve0wL5TWL._AC_SL1500_.jpg" alt="Funko Pop de BMO">
+                    <article class="card-container--info">
+                        <p class="card-titulo">BMO Funko</p>
+                        <div class="card-container--value">
+                            <p>$ 100.00</p>
+                            <button class="delete-button" type="button">Eliminar</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="card">
+                    <img class="img-card" src="https://http2.mlstatic.com/D_NQ_NP_941028-MLC49276589164_032022-O.webp" alt="Funko Pop de Grumpy">
+                    <article class="card-container--info">
+                        <p class="card-titulo">Grumpy Funko</p>
+                        <div class="card-container--value">
+                            <p>$ 100.00</p>
+                            <button class="delete-button" type="button">Eliminar</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="card">
+                    <img class="img-card" src="https://http2.mlstatic.com/D_NQ_NP_746696-MLC49276729102_032022-O.webp" alt="Funko Pop de Jake">
+                    <article class="card-container--info">
+                        <p class="card-titulo">Jake Funko</p>
+                        <div class="card-container--value">
+                            <p>$ 100.00</p>
+                            <button class="delete-button" type="button">Eliminar</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="card">
+                    <img class="img-card" src="https://m.media-amazon.com/images/I/71sGn9ZCdML.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Funko Pop de Marceline">
+                    <article class="card-container--info">
+                        <p class="card-titulo">Marceline Funko</p>
+                        <div class="card-container--value">
+                            <p>$ 100.00</p>
+                            <button class="delete-button" type="button">Eliminar</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="card">
+                    <img class="img-card" src="https://m.media-amazon.com/images/I/41efrENYXtL._AC_.jpg" alt="Funko Pop de Gunther">
+                    <article class="card-container--info">
+                        <p class="card-titulo">Gunther Funko</p>
+                        <div class="card-container--value">
+                            <p>$ 100.00</p>
+                            <button class="delete-button" type="button">Eliminar</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="card">
+                    <img class="img-card" src="https://m.media-amazon.com/images/I/719h7PcscLL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Funko Pop de La Princesa funkoPflama">
+                    <article class="card-container--info">
+                        <p class="card-titulo">Flame Princess Funko</p>
+                        <div class="card-container--value">
+                            <p>$ 100.00</p>
+                            <button class="delete-button" type="button">Eliminar</button>
+                        </div>
+                    </article>
+                </div>-->
+        </section>
+
+        <!-- Sección para Agregar Productos -->
+        <aside data-form class="formulario" aria-labelledby="titulo-agregar">
+            <h2 id="titulo-agregar">Agregar Producto</h2>
+            <form action="#" method="post" id="cargar-productos">
+                <label for="nombre">Nombre:</label>
+                <input data-name type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+                <label for="precio">Precio:</label>
+                <input data-price type="number" id="precio" name="precio" placeholder="Precio" required min="0">
+
+                <label for="imagen">URL de la Imagen:</label>
+                <input data-image type="url" id="imagen" name="imagen" placeholder="URL de la Imagen" required>
+
+                <button  type="submit">Enviar</button>
+                <button  type="reset">Limpiar</button>
+            </form>
+        </aside>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>Desarrollado por Erika Frias, 2024</p>
+    </footer>
+    <script type="module"  src="js/controllers/main.js"></script>
+</body>
+
+</html>
