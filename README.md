@@ -2,6 +2,7 @@
 Tienda de Funkos de Adventure Time
 
 # Proyecto: Tienda de Productos (Frontend)
+![ScAluraGeek](https://github.com/user-attachments/assets/4344b5ca-67db-4f41-936d-4a1152077c40)
 
 ## Descripción
 
